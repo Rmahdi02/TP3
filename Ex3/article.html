@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saisir vos articles</title>
+</head>
+<body>
+    <form action="article.php" method="post">
+        <fieldset>
+            <legend>Saisir vos articles</legend>
+
+            <label for="reference">Référence:</label><br>
+            <input type="text" id="reference" name="reference"><br><br>
+
+            <label for="libelle">Libellé:</label><br>
+            <input type="text" id="libelle" name="libelle"><br><br>
+
+            <label for="fournisseur">Fournisseur:</label><br>
+            <select id="fournisseur" name="fournisseur[]" >
+                <option value="Fournisseur1">Fournisseur1</option>
+                <option value="Fournisseur2">Fournisseur2</option>
+                <option value="Fournisseur3">Fournisseur3</option>
+            </select><br><br>
+
+            <label>Point de vente:</label><br>
+            <input type="checkbox" name="point_de_vente[]" value="Tunis"> Tunis<br>
+            <input type="checkbox" name="point_de_vente[]" value="Sousse"> Sousse<br>
+            <input type="checkbox" name="point_de_vente[]" value="Sfax"> Sfax<br>
+            <input type="checkbox" name="point_de_vente[]" value="Gabes"> Gabes<br><br>
+
+            <label for="prix">Prix:</label><br>
+            <input type="text" id="prix" name="prix"><br><br>
+
+            <label for="quantite">Quantité:</label><br>
+            <input type="text" id="quantite" name="quantite"><br><br>
+
+            <button type="submit">Commander</button>
+            <button type="reset">Annuler</button>
+        </fieldset>
+    </form>
+</body>
+</html>
